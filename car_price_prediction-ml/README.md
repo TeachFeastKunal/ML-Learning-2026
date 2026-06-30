@@ -60,20 +60,17 @@ All configurations were tested against a hidden **20% testing split** using metr
 
 ## 🚀 How to Open and Run This Notebook
 
-### 1. Clone the Environment
-```bash
-git clone https://github.com
-cd ML-Learning-2026
+### 1. Launch Instantly in Google Colab
+You can run this entire predictive pipeline in the cloud without configuring any local environments:
+1. Go to [Google Colab](https://google.com).
+2. Click on **File > Upload Notebook**.
+3. Upload the **`car_price_predictor.ipynb`** file from this repository.
+
+### 2. Install Framework Extensions (If Needed)
+Google Colab includes most data science libraries out of the box. If your notebook utilizes XGBoost, run this single command inside your very first Colab cell to ensure it is updated:
+```python
+!pip install xgboost
 ```
 
-### 2. Install Required Packages
-```bash
-pip install pandas numpy scikit-learn xgboost matplotlib seaborn jupyter
-```
-
-### 3. Launch Jupyter
-Start your notebook server and open the main analysis file:
-```bash
-jupyter notebook
-```
-From the browser dashboard, click on **`car_price_predictor.ipynb`** and run all cells sequentially to reproduce the visualizations and model training results.
+### 3. Execute the Code
+Once opened, simply click on **Runtime > Run all** in the top navigation menu to load the car dataset, generate the visualization charts, and train the pricing models automatically.
